@@ -4,22 +4,20 @@ import Contact from './Components/Contact';
 import Dashboard from './Components/Dashboard';
 import Homepage from './Components/Homepage';
 import Navbar from './Components/Navbar';
+import Setting from './Components/Setting';
 
 function App() {
 
   return (
     <div className="App">
           <Navbar />
-
       <Router>
-      <Routes>
-            
+      <Routes>    
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-            <Route path="/dashboard" element={<Dashboard />} />   
-        {/* </Navbar> */}
-            
+          <Route path="/dashboard" element={<Dashboard />} />   
+        <Route path="/settings" element={<Setting />} />   
       </Routes>
     </Router>
     </div>
