@@ -1,13 +1,13 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Dashboard', href: '/dashboard', current: true },
+  { name: 'Posts', href: '/posts', current: false },
+  { name: 'Projects', href: '/projects', current: false },
+  { name: 'Payment Test', href: '/payment-test', current: false },
 ]
 
 function classNames(...classes) {
@@ -15,6 +15,9 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+
+  const [current,setCurrent] = useState(false)
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -59,6 +62,8 @@ export default function Navbar() {
                       >
                         {item.name}
                       </a>
+                      
+
                     ))}
                   </div>
                 </div>

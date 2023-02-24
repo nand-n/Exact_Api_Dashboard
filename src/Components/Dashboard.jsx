@@ -23,30 +23,45 @@ function Dashboard() {
             Delete User
           </a>
         </nav> */}
-        <ul>
-          <li className='rounded-sm'>
-            <a href="/package-create" className=''>User Details</a>
+        <ul className=''>
+           <li className='my-1 rounded-sm bg-gray-50 hover:text-bold hover:text-ellipsis hover:bg-black'>
+            
+            <Link to="/package-create">
+              Package Create
+            </Link>
+          </li> <li className='my-1 rounded-sm bg-gray-50 hover:text-bold hover:text-yellow-300 hover:bg-black'>
+            
+            <Link to="/package-create">
+              Package Create
+            </Link>
+          </li> <li className= 'my-1 rounded-sm bg-gray-50 hover:text-bold hover:text-yellow-300 hover:bg-black'>
+            
+            <Link to="/package-create">
+              Package Create
+            </Link>
+          </li> <li className= 'my-1 rounded-sm bg-gray-50 hover:text-bold hover:text-yellow-300 hover:bg-black'>
+            
+            <Link to="/package-create">
+              Package Create
+            </Link>
+          </li> <li className='my-1 rounded-sm bg-gray-50 hover:text-bold hover:text-yellow-300 hover:bg-black'>
+            
+            <Link to="/package-create">
+              Package Create
+            </Link>
+          </li> <li className='my-1 rounded-sm bg-gray-50 hover:text-bold hover:text-yellow-300 hover:bg-black'>
+            
+            <Link to="/package-create">
+              Package Create
+            </Link>
+          </li> <li className='my-1 rounded-sm bg-gray-50 hover:text-bold hover:text-yellow-300 hover:bg-black'>
+            
+            <Link to="/package-create">
+              Package Create
+            </Link>
           </li>
-          <li className='rounded-sm'>
-            <a href="/package-delete" className=''>Delate User</a>
-          </li>
-          <li className='rounded-sm'>
-            <a href="/package-delete" className=''>Package Create</a>
-          </li>
-          <li className='rounded-sm'>
-            <a href="/package-delete" className=''>Package Update</a>
-          </li>
-          <li className='rounded-sm'>
-            <a href="/package-delete" className=''>Package Delete</a>
-          </li>
-          <li className='rounded-sm'>
-            <a href="/package-delete" className=''>Package By Id</a>
-          </li>
-          <li className='rounded-sm'>
-            <a href="/package-delete" className=''>Package List</a>
-          </li>
-          <li className='rounded-sm bg-gray-50 hover:text-bold hover:text-yellow-300 hover:bg-black'>
-            {/* <a href="/package-delete" className=''>Package Create</a> */}
+          <li className='my-1 rounded-sm bg-gray-50 hover:text-bold hover:text-yellow-300 hover:bg-black'>
+            
             <Link to="/package-create">
               Package Create
             </Link>
