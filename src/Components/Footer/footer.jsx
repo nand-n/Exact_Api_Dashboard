@@ -262,29 +262,22 @@ function Footer() {
              </p>
             </div>
       </div>
-
       <div className="mb-6 my-3">
         <h5 className="mb-2.5 font-bold uppercase">Dont Miss Out</h5>
-
         <ul className="mb-0 list-none">
           <li>
             <p  className="text-white">Sign Up to our Blog</p>
           </li>
-          
         </ul>
       </div>
     </div>
   </div>
-
   <div
-        className="mx-4 my-0 text-center"
-        // style={ "background-color: rgba(0, 0, 0, 0.2)"}>
-   >
+        className="mx-4 my-0 text-center">
      © 2023 Copyright :
     <Link className="text-white" href="https://tailwind-elements.com/"
-        >  Agri-Connect
+        >  Agri-Connect.
         </Link>
-        
   </div>
 </footer>
   )
