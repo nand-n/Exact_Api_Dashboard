@@ -34,33 +34,35 @@ function Home() {
   }
 
   return (
-    <div className='max-w-screen-8xl mx-auto mr-0' >
+    <div className='max-w-screen mx-auto mr-0' >
       <section className='mt-[80px]'>
         <div className=" ">
           <div className={` `} >
 
             <img className='w-screen h-full' src={ firstImg} alt="" />
-            <div className="absolute top-[236px] left-[183px] ">
-                <h1 className=' text-[#FFC700] text-[75px] font-serif font-bold' >
+            <div className="absolute top-[200px] left-[142px] ">
+                <h1 className=' text-[#FFC700] text-[56px] font-serif font-bold' >
               The Future of Agriculture
             </h1>
               <div className="flex">
-                <h1 className='text-white text-[75px] font-serif font-bold' >
+                <h1 className='text-white text-[56px] font-serif font-bold' >
               Is Now.
               </h1>
-              <h1 className='text-[#FFC700] text-[75px] font-serif font-bold'>Agri-Connect</h1>
+              <h1 className='text-[#FFC700] text-[56px] font-serif font-bold'>Agri-Connect.</h1>
             </div>
-              <p className=' text-[#ffffff] text-[36px] max-w-3xl font-bold mt-5'> Data Driven Agriculture For A better Productivity </p>
-              <p className='text-[#ffffff] text-[26px]  max-w-4xl mt-1'> Data Driven Agriculture is the best way of Agriculture that makes the Agriculturemore productive that makes us rich and another shit  </p>
+              <p className=' text-[#ffffff] text-[24px] text-bold max-w-3xl font-bold mt-5'> Data Driven Agriculture For A better Productivity </p>
+              <p className='text-[#ffffff] text-[16px] max-w-[638px] mt-1'> Data Driven Agriculture is the best way of Agriculture that makes the Agriculturemore productive that makes us rich and another shit  </p>
              
               <div className='mt-[60px] '>
               <Link to={ '/signin'} className='bg-[#ffffff] border-b-4 shadow text-[#022e0b] font-bold hover:bg-[#022e0b] hover:shadow-2xl hover:text-white hover:font-bold px-[35px] py-5 rounded-full'>Get Started</Link>
               </div>  
-              <div className="w-[598px] h-[598px] absolute top-[8px] left-[840px]">
-                <img src={logoXl} alt="logoxl" className=' w-full h-full'/>
-              </div>
+              
             </div>
+            
           </div>
+          <div className="w-[598px] h-[598px] absolute top-[90px] left-[740px] ">
+                <img src={logoXl} alt="logoxl" className=' w-fit h-fit'/>
+              </div>
           </div>
         </section>
         <section id="about-us" className="w-screen mt-[96px] h-[262px] bg-gray-200">
