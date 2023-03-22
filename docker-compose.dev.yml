@@ -1,0 +1,25 @@
+# version: '3.8'
+
+
+# services:
+#   app:
+#     container_name: agri-info-c
+#     image: agri-info-i
+#     build: 
+#       context: -
+#     ports:
+#       - 8080 : 80
+
+version: "3.8"
+
+services:
+  app:
+    container_name: agri-info-c
+    image: app-dev-agri-info-i
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:3000

@@ -304,7 +304,7 @@ function Footer() {
   </div>
 
   <div
-        className="p-4 text-center"
+        className="mx-4 my-0 text-center"
         // style={ "background-color: rgba(0, 0, 0, 0.2)"}>
    >
      © 2023 Copyright :

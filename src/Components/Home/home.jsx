@@ -1,7 +1,18 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import firstImg from './Firstimg.png'
+import firstImg from '../../assets/Agri-Connect/FirstLogo.png'
+import logoXl from '../../assets/Agri-Connect/Logo-xl.png'
+import computer from '../../assets/Agri-Connect/computer.png'
+import cloudUP from '../../assets/Agri-Connect/cloudup.png'
+import farmfild from '../../assets/Agri-Connect/FarmField.png'
+import dataDrivenAgriculture from '../../assets/Agri-Connect/DataDrivenAgriculture.png'
+import cloudIcn from '../../assets/Agri-Connect/cloudicn.png'
+import userIcn from '../../assets/Agri-Connect/usericn.png'
+import dangerIcn from '../../assets/Agri-Connect/dangericn.png'
+import thunderIcn from '../../assets/Agri-Connect/thundericn.png'
+import soillDevice from '../../assets/Agri-Connect/Soil.png'
+
 import ourStoryLogo from './assets/ourStoryLogo.png'
 import ourServices from './assets/ourServicesImg.png'
 import climate from './assets/climate.png'
@@ -23,31 +34,125 @@ function Home() {
   }
 
   return (
-    <div>
-      <section className='py-16'>
-        <div className="container mx-auto my-10">
+    <div className='max-w-screen-8xl mx-auto mr-0' >
+      <section className='mt-[80px]'>
+        <div className=" ">
           <div className={` `} >
 
-            <img className='absolute top-20 left-0 right-0 w-screen h-full' src={ firstImg} alt="" />
-            <div className="absolute top-80 left-50 bottom-50 w-full h-full">
-                <h1 className='text-[#266937] text-[56px] font-serif font-bold' >
+            <img className='w-screen h-full' src={ firstImg} alt="" />
+            <div className="absolute top-[236px] left-[183px] ">
+                <h1 className=' text-[#FFC700] text-[75px] font-serif font-bold' >
               The Future of Agriculture
             </h1>
-            <h1 className='text-[#242535] text-[56px] font-serif font-bold' >
+              <div className="flex">
+                <h1 className='text-white text-[75px] font-serif font-bold' >
               Is Now.
               </h1>
-              <p className='text-[#01312C] text-[24px] font-semibold mt-5'> Data Driven Agriculture For A better Productivity </p>
-              <p className='text-[#01312C] text-[18px]  max-w-lg'> Data Driven Agriculture is the best way of Agriculture that makes the Agriculturemore productive that makes us rich and another shit  </p>
-             
-              <div className='mt-20 '>
-              <Link to={ '/signin'} className='bg-[#266937] text-white hover:bg-[#022e0b] p-5 rounded-lg'>Get Started</Link>
-              </div>  
+              <h1 className='text-[#FFC700] text-[75px] font-serif font-bold'>Agri-Connect</h1>
             </div>
-            
+              <p className=' text-[#ffffff] text-[36px] max-w-3xl font-bold mt-5'> Data Driven Agriculture For A better Productivity </p>
+              <p className='text-[#ffffff] text-[26px]  max-w-4xl mt-1'> Data Driven Agriculture is the best way of Agriculture that makes the Agriculturemore productive that makes us rich and another shit  </p>
+             
+              <div className='mt-[60px] '>
+              <Link to={ '/signin'} className='bg-[#ffffff] border-b-4 shadow text-[#022e0b] font-bold hover:bg-[#022e0b] hover:shadow-2xl hover:text-white hover:font-bold px-[35px] py-5 rounded-full'>Get Started</Link>
+              </div>  
+              <div className="w-[598px] h-[598px] absolute top-[8px] left-[840px]">
+                <img src={logoXl} alt="logoxl" className=' w-full h-full'/>
+              </div>
+            </div>
           </div>
           </div>
         </section>
-        {/* <section id="about-us" className="py-16">
+        <section id="about-us" className="w-screen mt-[96px] h-[262px] bg-gray-200">
+        <div className="flex justify-between pt-[72px] pb-[68px] px-[200px]">
+          <div className="relative items-center">
+            <p className='text-[#265A1F] max-w-[200px] text-center text-[58px]'>150,000</p>
+            <p className='text-[#265A1F] max-w-[158px] text-center text-[19px]'>Farmers Joined And Impacted</p>
+          </div>
+          <div className="items-center">
+            <p className='text-[#265A1F] max-w-[200px] text-[58px]'>87,000</p>
+            <p className='text-[#265A1F] max-w-[158px] text-[19px]'>AGRO-BUSINESSES
+HELPED</p>
+          </div>
+          <div className="">
+            <p className='text-[#265A1F] max-w-[200px] text-[58px]'>790+</p>
+            <p className='text-[#265A1F] max-w-[158px] text-[19px]'>AGRICULTURAL
+COMMUNITY CREATED</p>
+          </div>
+          <div className="">
+            <p className='text-[#265A1F] max-w-[200px] text-[58px]'>29%</p>
+            <p className='text-[#265A1F] max-w-[158px] text-[18px]'>AVERAGE ANNUAL INCREASE
+IN FARMER’S INCOME</p>
+          </div>
+        </div>
+      </section>
+      <section className='flex justify-center space-x-[50px] mt-[99px]' >
+        <div className="bg-[#F4F4F4] w-[525px] h-[385px] rounded-xl pt-[37px] pl-[87px]">
+          <img src={computer} alt="computer" />
+          <h1 className='text-[#01312C] text-[18px] font-medium mt-[33.5px] '> Agri-Connect is a data managment ecosystem</h1>
+          <p className='w-[394px] text-[#01312C] text-[15px] mt-2'> Farm Planning, Budgeting, Track and Manage Product Inputs, Job Management, Compliance, Agronomy, Logistics & Grower Services, Precision.</p>
+        </div>
+        <div className="bg-[#F4F4F4] w-[525px] h-[385px] rounded-xl  pt-[21px] pl-[87px]">
+          <img src={cloudUP} alt="cloud" />
+          <h1 className='text-[#01312C] text-[18px] font-medium mt-[33.5px]'> Agri-Connect is used by:</h1>
+          <p className='w-[394px] text-[#01312C] text-[15px] mt-2'> Growers, Agronomists, Retailers, Application Contractors, Soil Samplers, anyone providing a service to crop growers.</p>
+        </div>
+      </section>
+      <section className='mt-[99px] max-w-screen h-[513px]'>
+           <img src={ farmfild} className='w-screen h-[513px]' alt="farm"/>
+      </section>
+      <section className='flex justify-center space-x-[41px] mt-[99px] max-w-screen'>
+        <div className="items-start max-w-[442px] h-[291px] ">
+          <h1 className='text-[25px] w-[440px]'>Mange Your Data </h1>
+          <h2 className='text-[12px]'>The Agworld ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.</h2>
+          <div className="flex justify-start gap-x-3 mt-5">
+            <img src={cloudIcn} className="w-fit h-fit"  alt="" />
+            <div className="felx justify-start space-x-2 ">
+              <h1>Collect and access your Data easily.</h1>
+              <h2>Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.</h2>
+            </div>
+          </div>
+          <div className="flex justify-start gap-x-3 mt-5">
+            <img src={userIcn} className="w-fit h-fit"  alt="" />
+            <div className="felx justify-start space-x-2 ">
+              <h1>Share your data with others.</h1>
+              <h2>Set up your team with personalised accounts to ensure everyone can see only what they need to get their job done.</h2>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <img src={ dataDrivenAgriculture} alt="dataDrivenAgriculture"/>
+        </div>
+
+
+      </section>
+       <section className='flex justify-center space-x-[41px] mt-[99px] max-w-screen'>
+        <div className="">
+          <img src={ soillDevice} alt="dataDrivenAgriculture"/>
+        </div>
+        <div className="items-start max-w-[442px] h-[291px] ">
+          <h1 className='text-[25px] w-[440px]'>How Does Agri-Connect help on the farm</h1>
+          <h2 className='text-[12px]'>Agri-Connect has a unique structured data system which means that you can take all your historical farm records and data shared from advisors, and turn them into unparalleled insights for more profitable decisions.</h2>
+          <div className="flex justify-start gap-x-3 mt-5">
+            <img src={thunderIcn} className="w-fit h-fit"  alt="" />
+            <div className="felx justify-start space-x-2 ">
+              <h1>Collect and access your Data easily.</h1>
+              <h2>Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.</h2>
+            </div>
+          </div>
+          <div className="flex justify-start gap-x-3 mt-5">
+            <img src={dangerIcn} className="w-fit h-fit"  alt="" />
+            <div className="felx justify-start space-x-2 ">
+              <h1>Share your data with others.</h1>
+              <h2>Set up your team with personalised accounts to ensure everyone can see only what they need to get their job done.</h2>
+            </div>
+          </div>
+        </div>
+      
+
+
+      </section>
+      {/* <section className='mt-[99px] -z-10'>
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold mb-8">About Us</h2>
           <p className="text-lg text-gray-700 mb-8">
@@ -86,7 +191,7 @@ function Home() {
           </div>
         </div>
       </section> */}
-        <section id="about-us" className="py-16 flex justify-center mt-[700px]">
+        {/* <section id="about-us" className="py-16 flex justify-center mt-[99px]">
         <div className=" relative bg-gradient-to-r from-white to-white shadow border-2 rounded-3xl" style={{width: 1314, height: 717,}}>
           <div className="mt-10 ml-10">
           <img src={ourStoryLogo} alt="ourStoryLogo" className='mt-10' />
@@ -95,48 +200,15 @@ function Home() {
           <p className='max-w-xl mt-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iusto ipsa ex, facilis quae obcaecati qui doloribus reprehenderit tempora fugit? Cupiditate, accusamus. Ex dignissimos provident ea adipisci facilis velit odio?</p>
           </div>
       </div>
-      </section>
+      </section> */}
 
-      <section className='py-16 '>
+      <section className='py-16  mt-[99px]'>
         <div className='flex justify-center'>
           <img src={ourServices} alt="ourServices" />
         </div>
-        <div className="flex justify-between pt-[160px] pl-[200px]">
-          <div className="flex">
-            <img src={climate} alt="climate" />
-            <div className='ml-5'>
-              <p className='font-bold text-[22px] '>Weather & Climate</p>
-              <p className='w-[219px]'>Data Driven and Ai based Weather and Climate prediction to predict upcoming Diseases ,  </p>
-            </div>
-          </div>
-          <div className="flex">
-            <img src={soill} alt="soil" />
-            <div className='ml-5'>
-              <p className='font-bold text-[22px] '>Soil Info</p>
-              <p className='w-[219px]'>Data Driven and Ai based Weather and Climate prediction to predict upcoming Diseases ,  </p>
-            </div>
-
-          </div>
-
-        </div>
-        <div className="flex justify-between pt-[73px] pl-[200px]  " >
-          <div className="flex">
-            <img src={disease} alt="disease" />
-            <div className='ml-5'>
-              <p className='font-bold text-[22px] '>Weather & Climate</p>
-              <p className='w-[219px]'>Data Driven and Ai based Weather and Climate prediction to predict upcoming Diseases ,  </p>
-            </div>
-
-          </div>
-          <div className="flex">
-            <img src={marketData} alt="marketData" />
-            <div className='ml-5'>
-              <p className='font-bold text-[22px] '>Weather & Climate</p>
-              <p className='w-[219px]'>Data Driven and Ai based Weather and Climate prediction to predict upcoming Diseases ,  </p>
-            </div>
-
-          </div>
-        </div>
+        {/* <div className="flex justify-center bg-white w-screen h-[149px]">
+        </div> */}
+        
 
       </section>
 
@@ -218,7 +290,7 @@ function Home() {
             </div>
       </section>
       
-      <section className='w-screen h-[517px] bg-black'></section>
+      {/* <section className='w-screen h-[517px] bg-black'></section> */}
         {/* <section id="about-us" className="py-16">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold mb-8">About Us</h2>

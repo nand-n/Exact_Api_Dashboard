@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev":"vite",
+    "devdoc": "docker-compose -f docker-compose.dev.yml up",
     "build": "vite build",
     "preview": "vite preview"
   },
