@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import footerLogo from './assets/footerLogo.png'
+import footerLogo from '../../assets/Agri-Connect/footerLogo.png'
 import mail from './assets/mail.png'
 import phone from './assets/phone.png'
 function Footer() {
@@ -65,7 +65,7 @@ function Footer() {
 //     </div>
 
 //     </footer>
-    <footer className="bg-[#2D2D2D] text-center  text-white">
+    <footer className="z-[50] bg-[#2D2D2D] text-center  text-white">
       <div className="container px-10 pt-6">
         <div className="mb-6 flex justify-between">
           <Link to='/' className=''>
@@ -249,33 +249,6 @@ function Footer() {
 
       <div className="mb-6">
         <h5 className="mb-2.5 font-bold uppercase">Get Intouch</h5>
-
-        {/* <ul className="mb-0 list-none">
-          <li>
-            <Link to="#!" className="text-white">Link 1</Link>
-          </li>
-          <li>
-            <Link to="#!" className="text-white">Link 2</Link>
-          </li>
-          <li>
-            <Link to="#!" className="text-white">Link 3</Link>
-          </li>
-          <li>
-            <Link to="#!" className="text-white">Link 4</Link>
-          </li>
-        </ul> */}
-            {/* <div className="flex my-3">
-              <img src={clock} width={20} height={ 30 } alt="time" />
-             <p className='text-white hover:text-[#266937]  text-[15px] ml-5'>
-               Weekday 8AM - 5PM
-             </p>
-             <p className='text-white hover:text-[#266937]  text-[15px] ml-5'>
-               Weekends 9AM - 5PM
-
-             </p>
-            
-
-            </div> */}
              <div className="flex my-3">
               <img src={phone} width={20} height={ 30 } alt="time" />
              <p className='text-white hover:text-[#266937] text-[15px] ml-5'>
@@ -309,7 +282,7 @@ function Footer() {
    >
      © 2023 Copyright :
     <Link className="text-white" href="https://tailwind-elements.com/"
-        >  Agri Info
+        >  Agri-Connect
         </Link>
         
   </div>

@@ -3,6 +3,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import firstImg from '../../assets/Agri-Connect/FirstLogo.png'
 import logoXl from '../../assets/Agri-Connect/Logo-xl.png'
+import logoApp from '../../assets/Agri-Connect/Agri-connectApp.png'
+import appleLogo from '../../assets/Agri-Connect/appleIcn.png'
+import playstoreLogo from '../../assets/Agri-Connect/playstoreIcn.png'
 import computer from '../../assets/Agri-Connect/computer.png'
 import cloudUP from '../../assets/Agri-Connect/cloudup.png'
 import farmfild from '../../assets/Agri-Connect/FarmField.png'
@@ -11,7 +14,10 @@ import cloudIcn from '../../assets/Agri-Connect/cloudicn.png'
 import userIcn from '../../assets/Agri-Connect/usericn.png'
 import dangerIcn from '../../assets/Agri-Connect/dangericn.png'
 import thunderIcn from '../../assets/Agri-Connect/thundericn.png'
-import soillDevice from '../../assets/Agri-Connect/Soil.png'
+import soillMachine from '../../assets/Agri-Connect/Soil.png'
+import soillDevice from '../../assets/Agri-Connect/soil-device.png'
+import appBg from '../../assets/Agri-Connect/Union.png'
+import appHome from '../../assets/Agri-Connect/appHome.png'
 
 import ourStoryLogo from './assets/ourStoryLogo.png'
 import ourServices from './assets/ourServicesImg.png'
@@ -130,7 +136,7 @@ IN FARMER’S INCOME</p>
       </section>
        <section className='flex justify-center space-x-[41px] mt-[99px] max-w-screen'>
         <div className="">
-          <img src={ soillDevice} alt="dataDrivenAgriculture"/>
+          <img src={ soillMachine} alt="dataDrivenAgriculture"/>
         </div>
         <div className="items-start max-w-[442px] h-[291px] ">
           <h1 className='text-[25px] w-[440px]'>How Does Agri-Connect help on the farm</h1>
@@ -138,15 +144,15 @@ IN FARMER’S INCOME</p>
           <div className="flex justify-start gap-x-3 mt-5">
             <img src={thunderIcn} className="w-fit h-fit"  alt="" />
             <div className="felx justify-start space-x-2 ">
-              <h1>Collect and access your Data easily.</h1>
-              <h2>Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.</h2>
+              <h1>Get information fast.</h1>
+              <h2>Agri-Connect has been designed to keep you and your advisors on the same page, everyone can see any updates or changes in real time.</h2>
             </div>
           </div>
           <div className="flex justify-start gap-x-3 mt-5">
             <img src={dangerIcn} className="w-fit h-fit"  alt="" />
             <div className="felx justify-start space-x-2 ">
-              <h1>Share your data with others.</h1>
-              <h2>Set up your team with personalised accounts to ensure everyone can see only what they need to get their job done.</h2>
+              <h1>Reduce erros.</h1>
+              <h2>Agri-Connect gives you clarity on your agronomic and financial plan for the season with all your product, operational and financial requirements included in an easy to understand format..</h2>
             </div>
           </div>
         </div>
@@ -204,17 +210,71 @@ IN FARMER’S INCOME</p>
       </div>
       </section> */}
 
-      <section className='py-16  mt-[99px]'>
-        <div className='flex justify-center'>
-          <img src={ourServices} alt="ourServices" />
+      <section className='flex justify-center mt-[99px]'>
+        <div className="relative">
+          
+            <img src={ourServices} className="" alt="ourServices" />
+            <h1 className='absolute top-[272px] left-[83.26px] right-[83px] text-center text-[30px] font-extrabold text-white'>
+            Modern farm management software that works where you do
+            </h1>
         </div>
-        {/* <div className="flex justify-center bg-white w-screen h-[149px]">
-        </div> */}
+      </section>
+      <section className='pt-[99px] w-screen h-[149px] flex justify-center gap-4 mb-4'>
+        <button className='text-white rounded-xl hover:bg-green-800 p-[16px] bg-green-500'>
+            Agri-Connect Basics
+        </button>
+         <button className='text-white rounded-xl hover:bg-green-800 p-[16px] bg-green-500'>
+            Wither & Climate 
+        </button>
+         <button className='text-white rounded-xl hover:bg-green-800 p-[16px] bg-green-500'>
+           Soil Info
+        </button>
+         <button className='text-white rounded-xl hover:bg-green-800 p-[16px] bg-green-500'>
+           Disease Detection 
+        </button>
+         <button className='text-white rounded-xl hover:bg-green-800 p-[16px] bg-green-500'>
+          Farm Management
+        </button>
+         <button className='text-white rounded-xl hover:bg-green-800 p-[16px] bg-green-500'>
+            Market Data
+        </button>
         
-
       </section>
 
-      <section className='w-full h-[353px] bg-[#266937]'>
+           <section className='flex justify-center space-x-[41px] mt-[99px] max-w-screen'>
+        <div className="items-start max-w-[442px] h-[291px] ">
+          <h1 className='text-[25px] w-[440px]'>Mange Your Data </h1>
+          <h2 className='text-[12px]'>The Agworld ecosystem allows you to collect data at every level of your operation and share this data with everyone that matters to you. Growers, farm hands, agronomists, input providers, contractors, banks, accountants, land owners and many other stakeholders are now able to work together on the same set of data.</h2>
+          <div className="flex justify-start gap-x-3 mt-5">
+            <img src={cloudIcn} className="w-fit h-fit"  alt="" />
+            <div className="felx justify-start space-x-2 ">
+              <h1>Collect and access your Data easily.</h1>
+              <h2>Your farm data is stored in the cloud, which allows you access from any computer or iPad/iPhone.</h2>
+            </div>
+          </div>
+          <div className="flex justify-start gap-x-3 mt-5">
+            <img src={userIcn} className="w-fit h-fit"  alt="" />
+            <div className="felx justify-start space-x-2 ">
+              <h1>Share your data with others.</h1>
+              <h2>Set up your team with personalised accounts to ensure everyone can see only what they need to get their job done.</h2>
+            </div>
+          </div>
+           <div className="flex justify-start gap-x-3 mt-5">
+            <img src={userIcn} className="w-fit h-fit"  alt="" />
+            <div className="felx justify-start space-x-2 ">
+              <h1>Share your data with others.</h1>
+              <h2>Set up your team with personalised accounts to ensure everyone can see only what they need to get their job done.</h2>
+            </div>
+          </div>
+          <button className='mt-[20px] px-[16px] py-3 border-2 border-[#01312C]   text-[#01312C] hover:bg-[#01312C] rounded-lg hover:text-white  '> Read More </button>
+        </div>
+        <div className="">
+          <img src={ soillDevice} alt="dataDrivenAgriculture"/>
+        </div>
+
+
+      </section>
+      <section className='w-full h-[353px] mt-[99px] bg-[#266937]'>
         <div className='flex justify-center pt-[45px]'>
           <div>
             <p className=' text-[36px] text-[#FFFFFF]  font-serif-700  font-semibold'>
@@ -290,6 +350,32 @@ IN FARMER’S INCOME</p>
         <Link to={'/prodcuts'} className='bg-[#01312C] text-white p-[11px] rounded hover:bg-[#266937] '>View All Prodcuts</Link>
           
             </div>
+      </section>
+      <section className='mt-[10px] mb-5 flex justify-center'>
+        <img src={appBg} alt="appBg" className='absolute z-0' />
+        <div className="bg-white  z-40">
+        <img src={appHome} alt="" className=' w-auto h-auto'/>
+        </div>
+        <div className='w-[529px] ml-[193px] h-[328px]'>
+          <div className="mt-[197px]  flex justify-center">
+            <img src={logoApp} className='w-full h-full' alt="logoSmallApp" />
+          </div>
+            <div className="w-[500px] ml-5">
+               Agri-Connect's easy to use apps put all the important information at your fingertips and work seamlessly, even when you don't have an internet connection. It's no wonder they've become the most rated farm management apps on the iTunes App store!
+          </div>
+          
+          <div className="flex justify-center mt-5 ">
+            <button className="m-5 p-5 w-auto flex justify-center text-[25px] font-bold border-2 border-[#01312C]   text-[#01312C] hover:bg-[#01312C] rounded-lg hover:text-white">
+              <img src={appleLogo} className='w-auto' alt="play" />
+              App Store
+            </button>
+            <button className=" p-5 m-5 w-auto flex justify-center text-[25px] font-bold border-2 border-[#01312C]   text-[#01312C] hover:bg-[#01312C] rounded-lg hover:text-white">
+              <img src={playstoreLogo} className='w-auto' alt="play" />
+              Play Store
+            </button>
+          </div>
+        </div>
+
       </section>
       
       {/* <section className='w-screen h-[517px] bg-black'></section> */}
