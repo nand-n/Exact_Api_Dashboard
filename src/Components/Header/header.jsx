@@ -58,19 +58,14 @@ function Header() {
         >
           Market Data
         </Link>
-
         <div className="inline-flex space-x-10 items-center justify-start ml-5">
-  
-    <div className="flex w-12 h-7">
+        <div className="flex w-12 h-7">
         <div className="flex items-center justify-between flex-1 h-full py-0.5 pl-5 pr-0.5 bg-gray-800 rounded-full">
               <div className={`flex items-start justify-between p-1 mx-auto bg-white shadow rounded-full ${
         theme === "light" ? "light-theme" : "dark-theme"
       }`}>
                 <img className=" h-full" src={search} />
-                
-                        
               </div>
-              
             </div>
     </div>
 </div>
