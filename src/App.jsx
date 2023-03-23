@@ -1,4 +1,4 @@
-import { BrowserRouter as Router,  Route, Routes } from 'react-router-dom';
+import { BrowserRouter ,  Route, Routes  } from 'react-router-dom';
 import Account from './Components/Account/account'
 import Climate from './Components/Climate/Wind/Wind'
 import ClimateWindy from './Components/Climate/Wind/Windy';
@@ -18,6 +18,7 @@ function App() {
 
   return (
     <>
+      <BrowserRouter>
        <div className='overflow-hidden'>
         <Header />
         {/* <Nav /> */}
@@ -36,7 +37,8 @@ function App() {
           </Routes>
         </main>
       </div>
-      <Footer/>
+        <Footer />
+        </BrowserRouter>
     </>
   )
 }
