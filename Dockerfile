@@ -61,7 +61,7 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install
 COPY . .
-EXPOSE 8080
+EXPOSE 6000
 RUN yarn build
 
 FROM nginx
