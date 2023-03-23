@@ -2,7 +2,7 @@ import React from 'react'
 
 function Soil() {
   return (
-    <div>soil</div>
+    <div>soil type</div>
   )
 }
 
