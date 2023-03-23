@@ -3,11 +3,18 @@ import { Link } from 'react-router-dom'
 // import logo from './logo.png'
 import logo from '../../assets/Agri-Connect/logo.png'
 import person from '../../assets/Agri-Connect/account.png'
+import themeimg from '../../assets/Agri-Connect/theme.png'
+import { motion } from 'framer-motion'
+import './Modals/index.css'
 
 
 import search from './search.png'
+import ProfileModal from './Modals/Profile'
 
 function Header() {
+  const handleProfile=() => {
+    return ProfileModal;
+   }
 
   const [theme,setTheme]=useState('light')
 
@@ -64,15 +71,20 @@ function Header() {
               <div className={`flex items-start justify-between p-1 mx-auto bg-white shadow rounded-full ${
         theme === "light" ? "light-theme" : "dark-theme"
       }`}>
-                <img className=" h-full" src={search} />
+                <img className="w-fit h-fit" src={themeimg} />
               </div>
             </div>
     </div>
-</div>
-</div>
+        </div>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={ {scale:0.9}}
+          onClick={() => handleProfile}
+          className=" btn inline-flex space-x-5 items-center justify-start ml-5 ">
+          <img src={ person} className="w-fit h-fit" alt="account"/>
+          </motion.button>
+  </div>
 </nav>
-      
-  
   )
 }
 

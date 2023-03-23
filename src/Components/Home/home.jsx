@@ -31,9 +31,15 @@ import prodcut1 from './assets/product/prodcut1.png'
 import prodcut2 from './assets/product/product2.png'
 import prodcut3 from './assets/product/product3.png'
 
+import { motion , useScroll , useTransform } from 'framer-motion'
+
 
 
 function Home() {
+
+  let { scrollYProgress } = useScroll();
+  // let y = useTransform(scrollYProgress, [0.1], ["0%", "50%"]);
+
 
   const handleGetStarted = () => {
     
@@ -41,7 +47,13 @@ function Home() {
 
   return (
     <div className='max-w-screen mx-auto mr-0' >
+       {/* <motion.div
+          style={{ y }}
+          className=""
+        >-
+        </motion.div> */}
       <section className='mt-[80px]'>
+       
         <div className=" ">
           <div className={` `} >
 
@@ -67,6 +79,7 @@ function Home() {
             
           </div>
           <div className="w-[598px] h-[598px] absolute top-[90px] left-[740px] ">
+            
                 <img src={logoXl} alt="logoxl" className=' w-fit h-fit'/>
               </div>
           </div>
